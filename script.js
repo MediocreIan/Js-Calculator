@@ -7,14 +7,15 @@ window.onload = function() {
     math = math.replace('÷', '/');
     document.getElementById('screen').value = eval(math);
     fin = true;
-}
+} // tied to equals key. evaluates whatever is on the screen.
+
 
 function reset() {
     document.getElementById('screen').value = '';
 }
 
 function updateScreen() {
-    var buttonValue = this.textContent;
+    var buttonValue = this.textContent; //takes the actual text of each button consider reworking
     if (fin && !isNaN(buttonValue)) {
     	reset()
     }
@@ -28,9 +29,3 @@ function updateScreen() {
     document.getElementById('clear').addEventListener('click', reset)
     document.getElementById('equals').addEventListener('click', operate)
 }
-/*var operate = {
-    '+': function (x, y) { return x + y },
-    '-': function (x, y) { return x - y },
-    '*': function (x, y) { return x * y },
-    '/': function (x, y) { return x / y }
-}​​​​​ possible alternate method of running math in the screen */

@@ -1,34 +1,53 @@
+body {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
 .calculator {
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     width: 400px;
     height: 500px;
-    background-color: grey;
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #504f4f;
+    background-size: 5px 5px;
     /*css grid rules*/
     display: inline-grid;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 4px -5px 1px 0px #565656;
 }
 button {
-	width: 100%;
-	height: 100%;
-	border-radius: 15px;
-	font-size: 20px
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: -3px 2px 1.5px #bbbaba;
+    ;
 }
 #screen {
-	grid-column: 1 / 5;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 30px;
-	margin:0;
-	padding: 0;
-	line-height: 10px
-	border:0;
-	width: 400px;
+	background-color: #e4e4c3;
+    grid-column: 1 / 5;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 10px border:0;
+    width: 400px;
+    border:0px;
+}
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #decimal, #equals {
+	background: radial-gradient(#76bb52 15%, transparent 30%) 0 0, radial-gradient(#3b6123 15%, #22401000 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 30%) 0 1px, radial-gradient(rgba(95, 148, 63, 0.1) 15%, transparent 20%) 8px 9px;
+    background-size: 4px 4px;
+    color: #dedede;
+    background-color: #7da746;
+    box-shadow: -3px 2px 1.5px #7ba049;
+    ;
 }
